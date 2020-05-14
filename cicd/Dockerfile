@@ -1,5 +1,7 @@
 FROM dockerfile/ubuntu
 
+ADD https://github.com/rhgenius/stockbit/blob/master/cicd/hello.txt /var/www/
+
 RUN \
   add-apt-repository -y ppa:nginx/stable && \
   apt-get update && \
